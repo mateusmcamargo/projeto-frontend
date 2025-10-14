@@ -74,3 +74,23 @@ div.user > i {
 div.user > i:hover {
     color: var(--color-bg2);
 }
+
+@media screen and (max-width: 700px) {
+    header {
+        border-bottom: 8px solid var(--color-primary-dark);
+        padding: 1rem 4rem 2rem 4rem;
+    }
+
+    header > div.brand {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 1.8rem;
+    }
+    header > div.brand > i {
+        font-size: 3.2rem;
+    }
+
+    header > nav {
+        display: none;
+    }
+}
