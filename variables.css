@@ -1,0 +1,25 @@
+:root {
+    --color-primary: #d085ff;
+    --color-primary-dark: #8436b5;
+    --color-primary-darker: #5c0b8e;
+    --color-primary-light: #e0aeff;
+    --color-primary-lighter: #f5e5ff;
+    
+    --color-medium: #CCCCCC;
+    --color-medium-dark: #a6a6a6;
+    --color-dark: #505050;
+    --color-darker: #303030;
+    --color-light: #d6d6d6;
+    
+    --color-bg: #fbfbfb;
+    --color-bg2: #f9f3ff;
+
+    --input-height: 4.2rem;
+
+    --checkbox-size: 2.4rem;
+    --checkbox-border-radius: .4rem;
+    --checkbox-color: var(--color-medium);
+    --checkbox-color-hover: var(--color-medium-dark);
+    --checkbox-color-selected: var(--color-primary);
+    --checkbox-color-check: var(--color-darker);
+}

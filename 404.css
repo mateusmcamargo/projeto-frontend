@@ -1,0 +1,79 @@
+@import './variables.css';
+@import './reset.css';
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.message {
+    width: 45rem;
+    --border-radius: 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg2);
+}
+div.message > iframe {
+    width: 100%;
+    height: 24rem;
+    padding: 2rem 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    background-color: var(--color-primary-lighter);
+}
+
+div.message > div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    padding: 3.2rem;
+    text-align: center;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+    background-color: var(--color-bg2);
+}
+
+div.content > h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-primary-darker);
+}
+div.content > p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--color-darker);
+}
+div.content > p > a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-primary-darker);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .1s ease;
+}
+div.content > p > a:hover {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 700px) {
+    div.message {
+        width: 90vw;
+        --border-radius: 1rem;
+        border-radius: var(--border-radius);
+    }
+    div.content > h1 {
+        font-size: 1.8rem;
+    }
+    div.content > p {
+        text-align: justify;
+        font-size: 1.4rem;
+    }
+    div.content > p > a {
+        font-size: 1.4rem;
+    }
+}
