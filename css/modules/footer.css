@@ -1,0 +1,104 @@
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    
+    width: 100vw;
+    background-color: black;
+}
+
+div.brand > div.logo {
+    display: flex;
+    gap: 1rem;
+}
+div.brand > div.logo > i {
+    font-size: 3.2rem;
+    color: var(--color-primary);
+}
+div.brand > div.logo > h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-family: "Quicksand", sans-serif;
+}
+div.brand > div.mission > p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    text-align: justify;
+    color: var(--color-bg2);
+}
+div.brand > div.social {
+    display: flex;
+    gap: 4rem;
+}
+div.brand > div.social > a > i {
+    font-size: 2.8rem;
+    color: var(--color-bg2);
+    cursor: pointer;
+    transition: .1s ease;
+}
+div.brand > div.social > a > i:hover {
+    color: var(--color-primary);
+}
+div.brand > div.back {
+    display: flex;
+}
+div.brand > div.back > a {
+    display: flex;
+    gap: 2rem;
+    padding: 1.6rem 2.4rem;
+    background-color: black;
+    border: 2px var(--color-bg2) solid;
+    cursor: pointer;
+    transition: .2s ease;
+}
+div.brand > div.back > a:hover {
+    background-color: var(--color-bg2);
+}
+div.brand > div.back > a:hover > i {
+    color: black;
+}
+div.brand > div.back > a:hover > p {
+    color: black;
+}
+
+div.brand > div.back > a > i {
+    font-size: 1.8rem;
+    color: var(--color-bg2);
+    transition: .2s ease;
+}
+div.brand > div.back > a > p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-bg2);
+    transition: .2s ease;
+}
+
+footer > div.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+footer > div.footer-section > h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+footer > div.footer-section > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer > div.footer-section > ul > li > a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-light);
+    transition: .1s;
+}
+footer > div.footer-section > ul > li > a:hover {
+    padding-left: 8px;
+    color: var(--color-primary-light);
+    border-left: 4px solid var(--color-primary);
+    border-bottom: none;
+}

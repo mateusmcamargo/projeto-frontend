@@ -1,5 +1,6 @@
-@import './variables.css';
-@import './reset.css';
+@import './modules/variables.css';
+@import './modules/reset.css';
+@import './modules/text.css';
 
 a {
     font-size: 1.4rem;
@@ -24,7 +25,7 @@ section, div.hero {
 }
 
 div.hero {
-    background-image: url('./images/hero.jpg');
+    background-image: url('../images/hero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

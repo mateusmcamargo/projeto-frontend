@@ -1,5 +1,5 @@
-@import './variables.css';
-@import './reset.css';
+@import './modules/variables.css';
+@import './modules/reset.css';
 
 main {
     width: 100vw;
