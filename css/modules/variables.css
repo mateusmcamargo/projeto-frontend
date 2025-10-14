@@ -17,6 +17,7 @@
     --input-height: 4.2rem;
 
     --checkbox-size: 2.4rem;
+    --checkbox-size-mobile: 2rem;
     --checkbox-border-radius: .4rem;
     --checkbox-color: var(--color-medium);
     --checkbox-color-hover: var(--color-medium-dark);
