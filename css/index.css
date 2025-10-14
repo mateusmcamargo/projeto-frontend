@@ -4,10 +4,6 @@
 @import './modules/footer.css';
 @import './modules/text.css';
 
-:root {
-    --header-height: 6rem;
-}
-
 main > section {
     min-height: 60rem;
     display: grid;
@@ -117,6 +113,7 @@ main > section#institutions > div.title {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 75%;
 }
 main > section#institutions > div.title > h1 {
     font-size: 2.4rem;
@@ -194,4 +191,91 @@ div.institution > div.info > a:hover {
 div.institution > div.info > a:active {
     top: 8px;
     filter: none;
+}
+
+@media screen and (max-width: 700px) {
+    main > section {
+        width: 100vw;
+        min-height: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    main > section > div {
+        padding: 2rem;
+    }
+    main > section > div.content > h1 {
+        font-size: 2rem;
+    }
+    main > section > div.content > h2 {
+        font-size: 2.4rem;
+    }
+    main > section > div.content > p {
+        font-size: 1.4rem;
+    }
+    main > section > div.hero > div.redirect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        width: 100%;
+        height: 100%;
+        padding: 2rem 2rem 2.4rem 2rem;
+        border: 8px dashed var(--color-primary-dark);
+        background-color: var(--color-primary-light);
+        border-radius: 2rem;
+        text-align: center;
+    }
+    div.redirect > h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    div.redirect > a {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+    }
+
+    main > section#about > div.hero {
+        width: 100%;
+        height: 30rem;
+    }
+    main > section > div.hero > div.img {
+        background-position: 65% 55%;
+        background-size: 200%;
+        border-radius: 2rem;
+    }
+    main > section#about > i {
+        display: none;
+    }
+
+    main > section#institutions > div.title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+        width: 100%;
+    }
+    main > section#institutions > div.title > h1 {
+        font-size: 2rem;
+    }
+    main > section#institutions > div.title > h2 {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+    main > section#institutions > div.content {
+        flex-direction: column;
+    }
+
+    div.institution {
+        width: 100%;
+    }
+    div.institution > div.info {
+        padding: 4rem;
+    }
+    div.institution > div.info > h4 {
+        font-size: 2.4rem;
+    }
 }
