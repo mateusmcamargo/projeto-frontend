@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CortaFome - Administração</title>
+    
+    <!--branding-->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="https://kit.fontawesome.com/f2b5d68917.js" crossorigin="anonymous"></script>
+    
+    <!--stylefonts-->
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <i class="fa-regular fa-hand-scissors"></i>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="landing.html#about">Sobre</a></li>
+                <li><a href="landing.html#donate">Doar</a></li>
+                <li><a href="landing.html#institutions">Instituições</a></li>
+                <li><a href="landing.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="user active">
+            <a href="./admin.html">
+                <i class="fa-solid fa-user-tie"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <div class="admin-header">
+                <h1>[Administração]</h1>
+                <h2>Gerenciamento de Usuários</h2>
+            </div>
+
+            <div class="admin-content">
+                <div class="form-container">
+                    <h3>Cadastrar Novo Usuário</h3>
+                    <form id="userForm">
+                        <div class="form-group">
+                            <label for="userName">Nome do Usuário<span>*</span></label>
+                            <input type="text" id="userName" placeholder="Digite o nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userEmail">E-mail<span>*</span></label>
+                            <input type="email" id="userEmail" placeholder="usuario@email.com" required>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Cadastrar
+                            </button>
+                            <button type="button" id="clearBtn" class="btn btn-secondary">
+                                <i class="fa-solid fa-eraser"></i>
+                                Limpar Campos
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="list-container">
+                    <div class="list-header">
+                        <h3>Usuários Cadastrados</h3>
+                        <div class="list-actions">
+                            <div class="search-box">
+                                <input type="text" id="searchInput" placeholder="Pesquisar usuários...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <button id="deleteAllBtn" class="btn btn-danger">
+                                <i class="fa-solid fa-trash-can"></i>
+                                Excluir Todos
+                            </button>
+                        </div>
+                    </div>
+
+                    <ul id="userList" class="user-list">
+                        <!-- Lista será preenchida dinamicamente -->
+                    </ul>
+
+                    <div id="emptyState" class="empty-state">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <p>Nenhum usuário cadastrado ainda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section brand">
+            <div class="logo">
+                <i class="fa-regular fa-hand-scissors"></i>
+                <h2>CortaFome</h2>
+            </div>
+            <div class="mission">
+                <p>Nossa missão é unir pessoas e transformar solidariedade em ação. Facilitamos a doação de alimentos excedentes para quem mais precisa, reduzindo o desperdício e fortalecendo o cuidado coletivo. Acreditamos que, com pequenos gestos, podemos gerar grandes mudanças e construir uma rede mais humana, consciente e sustentável.</p>
+            </div>
+            <div class="social">
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://mail.google.com"><i class="fa-regular fa-envelope"></i></a>
+                <a target="_blank" href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="back">
+                <a href="#top">
+                    <i class="fa-solid fa-angles-up"></i>
+                    <p>Voltar ao topo</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section map">
+            <h3>Mapa do site</h3>
+            <ul>
+                <li><a href="landing.html#about">Sobre</a></li>
+                <li><a href="landing.html#donate">Doar</a></li>
+                <li><a href="landing.html#institutions">Instituições</a></li>
+                <li><a href="landing.html#contact">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section legal">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="https://www.lipsum.com/" target="_blank">Política de Privacidade</a></li>
+                <li><a href="https://www.lipsum.com/" target="_blank">Termos de Serviço</a></li>
+                <li><a href="https://www.lipsum.com/" target="_blank">Manejo das doações</a></li>
+                <li><a href="cv.html" target="_blank">Currículo do criador</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

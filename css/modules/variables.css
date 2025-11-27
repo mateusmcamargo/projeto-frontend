@@ -14,6 +14,10 @@
     --color-bg: #fbfbfb;
     --color-bg2: #f9f3ff;
 
+    --color-danger: #ff6b6b;
+    --color-danger-dark: rgb(191, 56, 56);
+    --color-danger-hover: #ee5a52;
+
     --input-height: 4.2rem;
 
     --checkbox-size: 2.4rem;
